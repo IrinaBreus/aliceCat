@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #ffe167;
+    --grey: #616161;
+    --black: #19191b;
+    --white: #fff;
+    --stroke: #bebebe;
+    --back: #fffcf0;
+    --dark-yellow: #fbd32f;
+    --main-font: "FoglihtenNo06";
+    --second-font: "SF Pro Display";
+}
+
+a {
+    text-decoration: none;
+}
+ul, ol[class] {
+    list-style: none;
+}

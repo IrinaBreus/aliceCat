@@ -1,0 +1,120 @@
+.nav-panel {
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 98px;
+    &__menu {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__menu-item {
+        a {
+            font-weight: 300;
+            font-size: 14px;
+            color: var(--white);
+        }
+    }
+    &__card {
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    &__card-box {
+        width: 32px;
+        height: 32px;
+        background: var(--yellow);
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background: url('../icons/card.svg')center center / cover no-repeat;
+            width: 14px;
+            height: 15px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-panel {
+        &__menu {
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-panel {
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        &__menu {
+            order: -1;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-panel {
+        &__menu {
+            display: none;
+        }
+        &__card-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        &__humburger {
+            width: 32px;
+            height: 32px;
+            background: var(--yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            span,
+            span::before,
+            span::after {
+                border-radius: 9px;
+                width: 14px;
+                height: 1px;
+                background: var(--black);
+            }
+            span {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -4px;
+                    left: 0;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
+            }
+        }
+        &__card-txt {
+            display: none;
+        }
+    }
+    
+}
+    
+@media (max-width: 576px) {
+    
+}

@@ -1,0 +1,91 @@
+.header {
+    height: 176vh;
+    padding-top: 16px;
+    position: relative;
+    text-align: center;
+    background: url('../../img/header-bg.jpg') bottom center / cover no-repeat;
+    &__title,
+    &__title span {
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: var(--back);
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 60px;
+        span {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 96px;
+                height: 90px;
+                background: url('../icons/lighthing.svg');
+                top: 8px;
+                left: 105%;
+            }
+        }
+    }
+    &__txt {
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        color: var(--back);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .header {
+        height: 170vh;
+    }    
+}
+
+@media (max-width: 1600px) {
+    .header {
+        height: 160vh;
+    }    
+}
+
+@media (max-width: 1400px) {
+    .header {
+        height: 150vh;
+    }    
+}
+@media (max-width: 1200px) {
+    .header {
+        height: 140vh;
+    }    
+    
+}
+
+@media (max-width: 992px) {
+    .header {
+        height: 180vh;
+        &__title,
+        &__title span {
+            font-size: 40px;
+        }
+        &__title {
+            span {
+                &::after {
+                    width: 86px;
+                    height: 80px;
+                    background: url('../icons/lighthing.svg') center center / contain no-repeat;
+                    top: 10px;
+                    left: 102%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+}

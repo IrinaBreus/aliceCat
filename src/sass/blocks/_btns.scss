@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    border-radius: 33px;
+    padding: 11px 40px;
+    box-shadow: 0 10px 15px 0 rgba(255, 225, 103, 0.2);
+    background: var(--yellow);
+    text-align: center;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    color: var(--black);
+    transition: .4s;
+    &:hover {
+        box-shadow: 0 10px 15px 0 rgba(255, 225, 103, 0.2);
+        background: var(--dark-yellow);
+    }
+}
