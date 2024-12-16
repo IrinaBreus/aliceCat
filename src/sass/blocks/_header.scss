@@ -1,9 +1,10 @@
 .header {
-    height: 176vh;
+    height: 1440px;
     padding-top: 16px;
     position: relative;
     text-align: center;
     background: url('../../img/header-bg.jpg') bottom center / cover no-repeat;
+    overflow: hidden;
     &__title,
     &__title span {
         font-family: var(--main-font);
@@ -37,33 +38,30 @@
     }
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1700px) {
     .header {
-        height: 170vh;
+        height: 1240px;
     }    
 }
-
-@media (max-width: 1600px) {
+@media (max-width: 1440px) {
     .header {
-        height: 160vh;
+        height: 1140px;
     }    
 }
-
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
     .header {
-        height: 150vh;
+        height: 1065px;
     }    
 }
 @media (max-width: 1200px) {
     .header {
-        height: 140vh;
+        height: 1130px;
     }    
-    
 }
 
 @media (max-width: 992px) {
     .header {
-        height: 180vh;
+        height: 1040px;
         &__title,
         &__title span {
             font-size: 40px;
@@ -83,9 +81,65 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: 780px;
+        &__title,
+        &__title span {
+            font-size: 36px;
+        }
+        &__title {
+            margin-bottom: 36px;
+            span::after {
+                width: 76px;
+                height: 70px;
+                top: 8px;
+                left: 105%;
+            }
+        }
+        &__txt {
+            font-size: 18px;
+        }
+        &__btn {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
     
 }
 
 @media (max-width: 576px) {
-    
+    .header {
+        height: 760px;
+        background: url('../../img/header-bg-mob.png') bottom center / cover no-repeat;
+        padding-top: 22px;
+        &__title,
+        &__title span {
+            font-size: 25px;
+            line-height: 140%;
+        }
+        &__title {
+            margin-bottom: 24px;
+            span::after {
+                width: 42px;
+                height: 40px;
+                top: 16px;
+                left: 102%;
+            }
+        }
+        &__txt {
+            font-size: 16px;
+            line-height: 120%;
+            margin-bottom: 0;
+        }
+        &__btn {
+            bottom: 10%;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .header {
+        height: 680px;
+    }
 }

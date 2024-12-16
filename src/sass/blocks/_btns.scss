@@ -16,3 +16,14 @@
         background: var(--dark-yellow);
     }
 }
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 11px 32px;
+    }
+}
+@media (max-width: 375px) {
+    .btn {
+        padding: 11px 24px;
+    }
+}
