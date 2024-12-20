@@ -7,26 +7,38 @@
     text-transform: uppercase;
     color: var(--black);
 }
-
+.title_white {
+    color: var(--white);
+}
 @media (max-width: 1200px) {
-        
+    
+}
+
+@media (max-width: 992px) {
+    .title,
+    .title span {
+        font-size: 48px;
     }
     
-    @media (max-width: 992px) {
-        
+}
+
+@media (max-width: 768px) {
+    .title,
+    .title span {
+        font-size: 36px;
     }
     
-    @media (max-width: 768px) {
-        .title,
-        .title span {
-            font-size: 36px;
-        }
-        
+}
+
+@media (max-width: 576px) {
+    .title,
+    .title span {
+        font-size: 24px;
     }
-    
-    @media (max-width: 576px) {
-        .title,
-        .title span {
-            font-size: 24px;
-        }
+}
+@media (max-width: 375px) {
+    .title,
+    .title span {
+        font-size: 22px;
     }
+}
