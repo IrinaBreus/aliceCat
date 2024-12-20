@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'FoglihtenNo06';
-    src: url('../fonts/foglihtenno06-regular.eot') format('embedded-opentype'),
-         url('../fonts/foglihtenno06-regular.woff') format('woff'),
-         url('../fonts/foglihtenno06-regular.otf') format('truetype');
+    src: url('../fonts/FoglihtenNo06.woff2') format('woff2'),
+        url('../fonts/FoglihtenNo06.woff') format('woff'),
+        url('../fonts/foglihtenno06-regular.otf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -10,44 +10,44 @@
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Light.eot') format('embedded-opentype'),
-         url('../fonts/SF-Pro-Display-Light.woff') format('woff'),
-         url('../fonts/SF-Pro-Display-Light.otf') format('truetype');
-    font-weight: 300;
+    src: url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/SF-Pro-Display-Light.otf') format('truetype');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Regular.eot') format('embedded-opentype'),
-         url('../fonts/SF-Pro-Display-Regular.woff') format('woff'),
-         url('../fonts/SF-Pro-Display-Regular.otf') format('truetype');
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SF-Pro-Display-Regular.otf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Medium.eot') format('embedded-opentype'),
-         url('../fonts/SF-Pro-Display-Medium.woff') format('woff'),
-         url('../fonts/SF-Pro-Display-Medium.otf') format('truetype');
+    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/SF-Pro-Display-Medium.otf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Semibold.eot') format('embedded-opentype'),
-         url('../fonts/SF-Pro-Display-Semibold.woff') format('woff'),
-         url('../fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+    src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SF-Pro-Display-Semibold.otf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Bold.eot') format('embedded-opentype'),
-         url('../fonts/SF-Pro-Display-Bold.woff') format('woff'),
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+         url('../fonts/SFProDisplay-Bold.woff') format('woff'),
          url('../fonts/SF-Pro-Display-Bold.otf') format('truetype');
     font-weight: 700;
     font-style: normal;

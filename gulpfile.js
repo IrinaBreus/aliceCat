@@ -96,9 +96,9 @@ const icons = () => {
 const font = () => {
     return src("./src/fonts/*")
     .pipe(newer('./dist/fonts'))
-    .pipe(fonter({formats: ["ttf", "woff", "eot", "svg"]}))
+    // .pipe(fonter({formats: ["ttf", "woff", "eot", "svg"]}))
     .pipe(dest("./dist/fonts"))
-    .pipe(gulpIf(isProd,ttf2woff2()))
+    // .pipe(gulpIf(isProd,ttf2woff2()))
     .pipe(dest("./dist/fonts"))
     .pipe(browserSync.stream());
 }
