@@ -23,7 +23,6 @@ const hamburger = () => {
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Escape' && menu.classList.contains('active')) {
                 closeMenu();
-                console.log(e.code);
             } 
         });
 
