@@ -1,6 +1,8 @@
 .reviews {
+    position: relative;
     padding: 100px 0 120px;
     background: url('../icons/reviews-bg.svg') top 180px center / contain no-repeat;
+    z-index: 0;
     &__title {
         width: 620px;
         margin: 0 auto;
@@ -296,7 +298,7 @@
             &_6 {
                 border-radius: 0 32px 32px 19px;
                 width: 187px;
-                right: -40%;
+                right: -20%;
                 bottom: 44%
             }
         }
