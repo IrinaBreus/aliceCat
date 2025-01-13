@@ -16,7 +16,17 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_sliderDrag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderDrag */ \"./src/js/modules/sliderDrag.js\");\n/* harmony import */ var _modules_tab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tab */ \"./src/js/modules/tab.js\");\n/* harmony import */ var _modules_videoPlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/videoPlay */ \"./src/js/modules/videoPlay.js\");\n// import calcScroll from './modules/calcScroll';\r\n// import scrollUp from './modules/scrollUp';\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n(0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n(0,_modules_sliderDrag__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n(0,_modules_tab__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n(0,_modules_videoPlay__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n// scrollUp();\r\n// calcScroll();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/accordion */ \"./src/js/modules/accordion.js\");\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_sliderDrag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderDrag */ \"./src/js/modules/sliderDrag.js\");\n/* harmony import */ var _modules_tab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tab */ \"./src/js/modules/tab.js\");\n/* harmony import */ var _modules_videoPlay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/videoPlay */ \"./src/js/modules/videoPlay.js\");\n// import calcScroll from './modules/calcScroll';\r\n// import scrollUp from './modules/scrollUp';\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n(0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n(0,_modules_sliderDrag__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n(0,_modules_tab__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n(0,_modules_videoPlay__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n(0,_modules_accordion__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n// scrollUp();\r\n// calcScroll();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/accordion.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/accordion.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst accordion = () => {\r\n    const accordionItems = document.querySelectorAll('.accordion__item');\r\n\r\n    accordionItems.forEach(item => {\r\n        item.addEventListener('click', (e) => {\r\n            if (e.target.matches('.accordion__title') || e.target.matches('.accordion__title span')) {\r\n                item.classList.toggle('active');\r\n            }\r\n        })\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordion);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordion.js?");
 
 /***/ }),
 
