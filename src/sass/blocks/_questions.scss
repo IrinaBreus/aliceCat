@@ -74,15 +74,23 @@
 }
 
 @media (max-width: 1200px) {
-    .questions__form-wrapper {
-        padding: 0;
+    .questions {
+        &::after {
+            width: 340px;
+            bottom: 248px;
+        }
+        &__form-wrapper {
+            padding: 0;
+        }
     }
 }
 
 @media (max-width: 992px) {
     .questions {
         &::after {
-            width: 300px;
+            width: 218px;
+            top: 30%;
+            right: 56px;
         }
         &__form {
             width: 100%;
@@ -100,28 +108,27 @@
 }
 
 @media (max-width: 768px) {
-    
+    .questions {
+        &::after {
+            width: 171px;
+            top: 22%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .questions {
         &::after {
             content: '';
-            position: absolute;
-            width: 384px;
-            height: 629px;
-            background: url('../img/owl.svg') center center / contain no-repeat;
-            bottom: 142px;
-            right: 130px;
-            z-index: 0;
+            width: 130px;
+            top: 21%;
+            right: 22px;
         }
         &__title {
             margin-bottom: 40px;
         }
         &__accordion {
             margin-bottom: 42px;
-        }
-        &__form-wrapper {
         }
         &__form-title {
             text-align: center;
