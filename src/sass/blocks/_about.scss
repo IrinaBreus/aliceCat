@@ -95,21 +95,33 @@
     &__contacts {
         width: max-content;
         align-self: start;
-        padding: 13px 24px 13px 32px;
+        padding: 13px 32px;
         display: flex;
         background: var(--white);
         border-radius: 1502px;
         color: var(--black);
         font-weight: 300;
         font-size: 13px;
-        gap: 38px;
         align-items: center;
+        transition: all .6s;
+        gap: 0;
+        &:hover {
+            padding: 13px 24px 13px 32px;
+            gap: 38px;
+            & .about__social {
+                width: max-content;
+                opacity: 1;
+            }
+        }
     }
     &__social {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
+        width: 0;
+        opacity: 0;
+        transition: opacity .6s .3s, width .9s;
         a {
             width: 40px;
             height: 40px;
@@ -209,6 +221,12 @@
         &__contacts {
             margin-top: 20px;
             justify-self: center;
+            padding: 13px 24px 13px 32px;
+            gap: 38px;
+        }
+        &__social {
+            width: max-content;
+            opacity: 1;
         }
     }    
 }
@@ -251,6 +269,10 @@
             font-size: 12px;
             gap: 10px;
             padding: 12px 22px;
+            &:hover {
+                gap: 10px;
+                padding: 12px 22px;
+            }
         }
         &__social {
             a {

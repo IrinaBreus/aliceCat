@@ -3,6 +3,7 @@
 
 import accordion from "./modules/accordion";
 import hamburger from "./modules/hamburger";
+import modals from "./modules/modals";
 import sliderDrag from "./modules/sliderDrag";
 import tab from "./modules/tab";
 import videoPlay from "./modules/videoPlay";
@@ -15,6 +16,8 @@ sliderDrag();
 tab();
 videoPlay();
 accordion();
+
+modals();
 // scrollUp();
 // calcScroll();
 });

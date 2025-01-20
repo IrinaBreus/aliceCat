@@ -12,6 +12,7 @@
     color: var(--black);
     transition: .4s;
     border: none;
+    cursor: pointer;
     &:hover {
         box-shadow: 0 10px 15px 0 rgba(255, 225, 103, 0.2);
         background: var(--dark-yellow);
