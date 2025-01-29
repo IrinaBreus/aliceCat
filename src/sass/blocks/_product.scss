@@ -1,0 +1,286 @@
+.product {
+    padding: 20px 20px 48px;    
+    &__link-back {
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        color: var(--black);
+        transition: .3s;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('../icons/back.svg');
+            display: inline-block;
+        }
+        &:hover {
+            transform: translateY(2px);
+        }
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 6fr 5fr 1fr;
+        gap: 20px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--black);
+        margin-bottom: 10px;
+    }
+    &__age {
+        font-weight: 300;
+        font-size: 12px;
+        color: var(--grey);
+        margin-bottom: 10px;
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--black); 
+        margin-bottom: 20px;
+        span {
+            font-weight: 300;
+            font-size: 24px;
+            text-decoration: line-through;
+            color: var(--stroke);
+            margin-left: 10px;
+        }
+    }
+    &__form {
+        width: 220px;
+        margin-bottom: 30px;
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &__select {
+        padding: 8px 15px;
+        border-radius: 32px;
+        padding-right: 32px;
+        width: 200px;
+        font-weight: 300;
+        font-size: 12px;
+        border: 1px solid var(--stroke);
+        color: var(--grey);
+        -webkit-appearance: none; /* Стиль для Safari */
+        -moz-appearance: none;    /* Стиль для Firefox */
+        appearance: none;
+        cursor: pointer;
+        background: url('../icons/arrowDown.svg') center right 15px no-repeat;
+        margin-bottom: 20px;
+    }
+    &__form-inner {
+        display: flex;
+        gap: 10px;
+    }
+    &__current {
+        border: 1px solid var(--stroke);
+        border-radius: 33px;
+        padding: 13px 15px;
+        width: 94px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--stroke);
+        input {
+            width: 32px;
+            text-align: center;
+            border: none;
+            background: transparent;
+            font-size: 18px;
+        }
+        span {
+            font-size: 20px;
+            cursor: pointer;
+            width: 16px;
+            text-align: center;
+        }
+    }
+    &__btn {
+        padding: 12px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: right;
+        color: var(--black);
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--black);
+    }
+    &__caption {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--black);
+        cursor: pointer;
+        margin-bottom: 20px;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            margin-left: 10px;
+            background: url('../icons/next.svg') center center / cover no-repeat;
+            transition: all .3s;
+        }
+    }
+    
+    &__hidden-box {
+        position: relative;
+        overflow: hidden;
+    }
+    &__hidden-box.active {
+        & .product__caption {
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+        & .product__visible-txt {
+            height: max-content;
+            overflow: visible;
+        }
+        & .product__hidden-txt {
+            top: 100%;
+            height: 400px;
+        }
+    }
+    &__visible-txt {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        transition: height .6s;
+    }
+    &__hidden-txt {
+        background: linear-gradient(180deg, rgba(255,255,255,0.2) 5%, rgba(255,255,255,1) 35%);
+        width: 100%;
+        height: 220px;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        z-index: 20;
+        transition: top .6s;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product { 
+        &__item {
+            grid-template-columns: 6fr 5fr ;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+    padding: 20px 20px;    
+    &__item {
+        grid-template-columns: 1fr 1fr;
+    }
+    &__current {
+        border: 1px solid var(--stroke);
+        border-radius: 33px;
+        padding: 13px 15px;
+        width: 94px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--stroke);
+        input {
+            width: 32px;
+            text-align: center;
+            border: none;
+            background: transparent;
+            font-size: 18px;
+        }
+        span {
+            font-size: 20px;
+            cursor: pointer;
+            width: 16px;
+            text-align: center;
+        }
+    }
+    &__visible-txt {
+        height: 160px;
+    }
+    &__hidden-txt {
+        height: 180px;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .product {
+    &__link-back {
+        margin-bottom: 20px;
+        &:hover {
+            transform: translateY(0);
+        }
+    }
+    &__item {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+}
+}
+
+@media (max-width: 576px) {
+    .product {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+        &__age {
+            margin-bottom: 6px;
+        }
+        &__price {
+            font-size: 20px;
+            span {
+                font-size: 20px;
+            }
+        }
+        &__form {
+            margin-bottom: 20px;
+        }
+        &__current {
+            border: 1px solid var(--stroke);
+            border-radius: 33px;
+            padding: 13px 15px;
+            width: 94px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--stroke);
+            input {
+                font-size: 14px;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+        &__text {
+            gap: 20px;
+            font-size: 14px;
+        }
+        &__caption {
+            font-size: 16px;
+            &::after {
+                display: inline-block;
+                width: 7px;
+                height: 14px;
+            }
+        }
+    }
+}
