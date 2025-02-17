@@ -18,7 +18,7 @@ const createCatalog = (props) => {
                         <a href="product.html" target="_blank">${title}</a>
                     </div>
                     <div class="catalog__descr">${subtitle}</div>
-                    <button class="btn catalog__btn" data-id=${id}>${intlPrice} ₽</button>
+                    <a href="product.html" target="_frame" class="btn catalog__btn" data-id=${id}>${intlPrice} ₽</a>
                 </div>
             `
         }).join("");

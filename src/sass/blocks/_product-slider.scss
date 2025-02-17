@@ -3,9 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
-    border: 1px solid red;
     &__main {
-        border: 1px solid blue;
         width: 100%;
         position: relative;
         z-index: 0;
@@ -43,7 +41,6 @@
     }
     &__inner {
         width: 100%;
-        border: 1px solid green;
     }
     &__slide {
         height: 80vh;
@@ -96,8 +93,9 @@
 }
 
 .fadeIn {
-    animation: fadeIn .6s linear;
+    animation: fadeIn .8s linear;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: .3;

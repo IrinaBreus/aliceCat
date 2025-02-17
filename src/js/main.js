@@ -8,6 +8,7 @@ import hamburger from "./modules/hamburger";
 import modals from "./modules/modals";
 import productFunctional from "./modules/productFunctional";
 import sliderDrag from "./modules/sliderDrag";
+import sliderProduct from "./modules/sliderProduct";
 import tab from "./modules/tab";
 import videoPlay from "./modules/videoPlay";
 
@@ -106,10 +107,11 @@ const props = [
 ];
 
 createCatalog(props);
-// cart(props);
+cart(props);
 
 hamburger();
 sliderDrag();
+sliderProduct();
 tab();
 videoPlay();
 accordion();
